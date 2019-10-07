@@ -1,0 +1,24 @@
+<template>
+    <lightning-card
+        title="Search Contacts"
+        icon-name="custom:custom63"
+    >
+        <div class="slds-m-around_medium">
+            <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small"
+                             name="searchNameInput" label="First Name" value={searchName}
+            ></lightning-input>
+            <lightning-button name="searchContacts" label="Search" title="Search" onclick={searchClicked} class="slds-m-left_x-small"></lightning-button>
+            <template if:true={contacts.data}>
+                <div id="searchContactsResults" class="slds-m-top_small">
+                    <template for:each={contacts.data} for:item="contact">
+                        <p key={contact.Id}><span>{contact.Name}, </span><span>{contact.Email}</span></p>
+                    </template>
+                </div>
+            </template>
+            <template if:true={contacts.error}>
+                Error!
+            </template>
+        </div>
+
+    </lightning-card>
+</template>
