@@ -8,7 +8,6 @@ var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
 
-console.log('Config = ' + JSON.stringify(config));
 driver.get(config.login);
 driver.wait(until.elementsLocated(By.name('username')), 10000);
 driver.findElement(By.name('username')).sendKeys(config.username);
