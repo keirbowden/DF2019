@@ -14,5 +14,6 @@ const login = exports.login = ((driver) => {
     driver.wait(until.elementsLocated(By.name('username')), 10000).then (() => console.log('About to login'));
     driver.findElement(By.name('username')).sendKeys(config.username);
     driver.findElement(By.name('pw')).sendKeys(config.password);
+    driver.sleep(5000);
     driver.findElement(By.name('Login')).click();
 });
