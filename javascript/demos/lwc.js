@@ -22,7 +22,7 @@ driver.findElement(By.tagName('c-search-contacts'))
                 return driver.executeScript("return arguments[0].shadowRoot",
                 shadowHost)})
 .then((result) => {
-                console.log('Got shadow root');
+                console.log('Got shadow root of ');
                 result.findElement(By.name('searchNameInput')).sendKeys('Sean');
                 driver.sleep(3000);
 

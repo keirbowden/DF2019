@@ -37,19 +37,19 @@ driver.sleep(3000);
 
 // Populate the other required fields
 driver.findElement(By.xpath('//label/span[contains(text(), "Amount")]/../../input')).sendKeys('100000');
-driver.sleep(5000);
+driver.sleep(3000);
 driver.findElement(By.xpath('//label/span[contains(text(), "Close Date")]/../..//input')).sendKeys('21/12/2019');
-driver.sleep(5000);
+driver.sleep(3000);
 
 // Choose Qualification from the Stage picklist
 driver.findElement(By.xpath('//span[contains(@class, "label")]/span[contains(text(), "Stage")]/../..//a')).click();
-driver.sleep(3000);
+driver.sleep(5000);
 driver.findElement(By.xpath('//a[@title="Qualification"]')).click();
-driver.sleep(3000);
+driver.sleep(5000);
 
 // Save the record
 driver.findElement(By.xpath('//button[@title="Save"]')).click();
 driver.sleep(5000);
 
 // Wait until the view page is rendered
-driver.wait(until.elementsLocated(By.xpath('//span[contains(@class, "uiOutputText") and contains(text(), "Keir Test Opportunity")]')), 10000).then (() => console.log('On oppportunity view page'));
+driver.wait(until.elementsLocated(By.xpath('//span[contains(@class, "uiOutputText") and contains(text(), "Keir Test Opportunity")]')), 10000).then (() => console.log('On opportunity view page'));
