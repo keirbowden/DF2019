@@ -15,3 +15,21 @@ JavaScript bindings to allow Node execute the Selenium Webdriver.
 ## Executing
 
 Execute `node javascript/demos/<name of demo>.js`
+
+e.g. `node javascript/demos/login.js`
+
+## Useful Links
+
+[Selenium HQ](https://bobbuzz.me.uk/selenium)
+
+[selenium-webdriver node package](https://bobbuzz.me.uk/2GPuDVS)
+
+[JavaScript API Documentation](https://bobbuzz.me.uk/JSAPI)
+
+[Selenium and the Shadow DOM article](https://bobbuzz.me.uk/2SIISTP)
+
+[Selenium and Web Components Github issue](https://bobbuzz.me.uk/WC)
+
+[Selenium WebDriver Architecture](https://bobbuzz.me.uk/WDArch)
+
+[SeleniumConf London 2019 Playlist](https://bobbuzz.me.uk/SeConf)
