@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 
 const config = exports.config = {
-    username: 'keirbowden@df19.dev',
-    password: 'Passw0rd',
+    username: '<username>',
+    password: '<password>',
     login: 'https://login.salesforce.com',
-    instance: 'bbdf2019-dev-ed.lightning.force.com'
+    instance: '<instance>.lightning.force.com'
 };
