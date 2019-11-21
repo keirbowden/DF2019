@@ -3,7 +3,8 @@
 ## Introduction
 
 This repository contains the example code from my Dreamforce 2019 session on using the
-JavaScript bindings to allow Node execute the Selenium Webdriver.
+JavaScript bindings to allow Node execute the Selenium Webdriver. You can find the 
+associated slide deck [Here](https://bobbuzz.me.uk/DF19Slides)
 
 ## Instructions
 
